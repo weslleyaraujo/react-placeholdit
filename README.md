@@ -1,6 +1,6 @@
 React Placeholdit
 =========================
-[![Circle CI](https://circleci.com/gh/hugobessaa/react-placeholdit.svg?style=svg)](https://circleci.com/gh/hugobessaa/react-placeholdit) [![codecov.io](http://codecov.io/github/hugobessaa/react-placeholdit/coverage.svg?branch=master)](http://codecov.io/github/hugobessaa/react-placeholdit?branch=master) [![dependencies](https://david-dm.org/hugobessaa/react-placeholdit.svg)]
+[![Circle CI](https://circleci.com/gh/hugobessaa/react-placeholdit.svg?style=svg)](https://circleci.com/gh/hugobessaa/react-placeholdit) [![codecov.io](http://codecov.io/github/hugobessaa/react-placeholdit/coverage.svg?branch=master)](http://codecov.io/github/hugobessaa/react-placeholdit?branch=master) ![dependencies](https://david-dm.org/hugobessaa/react-placeholdit.svg)
 
 A simple React component to display [placehold.it](https://placehold.it/) images.
 
