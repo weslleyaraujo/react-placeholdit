@@ -29,14 +29,14 @@ const Placeholdit = React.createClass({
 
     if (typeof this.props.children === 'function') {
       return this.props.children(src, this.props);
-    } else {
-      return (
-        <img
-          src={src}
-          width={width}
-          height={height} />
-      );
     }
+
+    return (
+      <img
+        src={src}
+        width={width}
+        height={height} />
+    );
   }
 });
 

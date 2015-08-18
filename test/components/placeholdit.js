@@ -67,7 +67,7 @@ describe('Placeholdit', () => {
   describe('Children callback', () => {
     const spy = expect.createSpy(() => {});
 
-    const component = shallowComponent(
+    shallowComponent(
       <Placeholdit width="100" alt="Image">
         {(src, props) => <span>{spy(src, props)}</span>}
       </Placeholdit>
