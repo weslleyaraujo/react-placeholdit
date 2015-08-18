@@ -27,12 +27,16 @@ const Placeholdit = React.createClass({
 
     const src = `https://placehold.it/${width}x${height}.${format}`;
 
-    return (
-      <img
-        src={src}
-        width={width}
-        height={height} />
-    );
+    if (typeof this.props.children === 'function') {
+      return this.props.children(src, this.props);
+    } else {
+      return (
+        <img
+          src={src}
+          width={width}
+          height={height} />
+      );
+    }
   }
 });
 

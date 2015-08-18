@@ -63,4 +63,21 @@ describe('Placeholdit', () => {
       expect(jpegComponent.props.src).toBe('https://placehold.it/300x300.jpeg');
     });
   });
+
+  describe('Children callback', () => {
+    const spy = expect.createSpy(() => {});
+
+    const component = shallowComponent(
+      <Placeholdit width="100" alt="Image">
+        {(src, props) => <span>{spy(src, props)}</span>}
+      </Placeholdit>
+    );
+
+    it('should accept a children callback', () => {
+      expect(spy).toHaveBeenCalled();
+      expect(spy.calls.length).toBe(1);
+      expect(spy.calls[0].arguments[0]).toBe('https://placehold.it/100x100.gif');
+      expect(spy.calls[0].arguments[1]).toBeAn(Object);
+    });
+  });
 });
