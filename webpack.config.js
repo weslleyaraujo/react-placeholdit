@@ -29,7 +29,7 @@ module.exports = {
     }]
   },
   output: {
-    library: 'library-boilerplate',
+    library: 'react-placeholdit',
     libraryTarget: 'umd'
   },
   plugins: plugins,
