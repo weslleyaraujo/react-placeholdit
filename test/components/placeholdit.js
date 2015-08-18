@@ -3,7 +3,6 @@ import React from 'react/addons';
 import Placeholdit from '../../src';
 
 const { TestUtils } = React.addons;
-const shallowRenderer = TestUtils.createRenderer();
 
 function shallowComponent(component) {
   const shallowRenderer = TestUtils.createRenderer();
@@ -11,7 +10,7 @@ function shallowComponent(component) {
   return shallowRenderer.getRenderOutput();
 }
 
-describe('Placeholdit', function() {
+describe('Placeholdit', () => {
   describe('Basic usage', () => {
     const simpleComponent = shallowComponent(
       <Placeholdit width="200" />

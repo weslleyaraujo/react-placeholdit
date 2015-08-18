@@ -28,9 +28,9 @@ const Placeholdit = React.createClass({
     const src = `https://placehold.it/${width}x${height}.${format}`;
 
     return (
-      <img 
+      <img
         src={src}
-        width={width} 
+        width={width}
         height={height} />
     );
   }
