@@ -46,6 +46,5 @@ The `Placeholdit` component also allows you to pass any other props, like
     Function(src, props) => ReactElement
     // you can use a children callback function that receives the generated `src`
     // and use as you wish
-  }
-  />
+  } />
 ```
